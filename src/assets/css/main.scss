@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,90,100..900;1,90,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+
+@import "@vue-flow/core/dist/style.css";
+@import "@vue-flow/core/dist/theme-default.css";
+@import "@vue-flow/controls/dist/style.css";
+@import "@vue-flow/minimap/dist/style.css";
+@import "@vue-flow/node-resizer/dist/style.css";
+
+.font-ltr {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.font-rtl {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7c7c7c;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6c6c6c;
+}
+
+.item-underline-animation {
+  @apply before:bg-primary before:absolute before:h-0.5 before:w-0 before:bottom-0 before:left-0 group-hover/child-item:before:w-full before:transition-all before:duration-300
+}
+
+.item-underline-animation-rtl {
+  @apply before:bg-primary before:absolute before:h-0.5 before:w-0 before:bottom-0 before:right-0 group-hover/child-item:before:w-full before:transition-all before:duration-300
+}
+
+.link-underline {
+  @apply after:bg-base-content after:absolute after:h-0.5  after:bottom-0 after:left-0 after:w-full
+}
+
+.router-link-active {
+  @apply text-primary
+}
+
+.router-link-exact-active {
+
+}
+
+.user-background {
+  background: url('../images/banner.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(20%);
+  opacity: 0;
+}
+
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Vue-Toastification__toast--default {
+  @apply bg-primary #{!important}
+}
+
+.Vue-Toastification__toast--info {
+  @apply bg-secondary #{!important}
+}
+
+.Vue-Toastification__toast--warning {
+  @apply bg-warning #{!important}
+}
+
+.Vue-Toastification__toast-body {
+  @apply text-sm #{!important}
+}
+
+.skeleton {
+  @apply bg-base-content/20
+}
+
+.truncate-text {
+  width: 130px !important; /* Adjust the width to fit your layout */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-primary:not(.btn-outline), .btn-secondary:not(.dropdown), {
+  span {
+    @apply text-white
+  }
+}
+
+.btn-error {
+  @apply bg-danger border-danger;
+  &:hover {
+    @apply bg-danger border-danger;
+  }
+}
+
+.input-sm {
+  height: 2.13rem;
+}
+
+.min-card-height-table {
+  min-height: calc(100vh - 80px - 44px - 255px);
+}
+
+.tab.tab-active:not(.tab-disabled):not([disabled]), .tab:is(input:checked){
+  @apply border-primary
+}

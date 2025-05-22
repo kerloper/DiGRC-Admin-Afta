@@ -1,0 +1,22 @@
+export const industryList = [
+    {id: 1, title: "Accommodation & Food Services"},
+    {id: 2, title: "Administrative & Support Services"},
+    {id: 3, title: "Agriculture, Forestry & Fishing"},
+    {id: 4, title: "Arts & Recreation Services"},
+    {id: 5, title: "Construction"},
+    {id: 6, title: "Education & Training"},
+    {id: 7, title: "Electricity, Gas, Water & Waste Services"},
+    {id: 8, title: "Financial & Insurance Services"},
+    {id: 9, title: "Healthcare & Social Assistance"},
+    {id: 10, title: "Information Media & Telecommunications"},
+    {id: 11, title: "IT, Software & Services"},
+    {id: 12, title: "Manufacturing"},
+    {id: 13, title: "Mining"},
+    {id: 14, title: "Other Services"},
+    {id: 15, title: "Professional, Scientific & Technical Services"},
+    {id: 16, title: "Public Administration & Safety"},
+    {id: 17, title: "Rental Hiring & Real Estate Services"},
+    {id: 18, title: "Retail Trade"},
+    {id: 19, title: "Transport, Postal & Warehousing"},
+    {id: 20, title: "Wholesale Trade"}
+]
