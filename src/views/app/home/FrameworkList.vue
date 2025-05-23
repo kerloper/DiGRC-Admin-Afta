@@ -23,7 +23,7 @@ const props = defineProps({
   <div class="h-full">
 
     <Swiper
-        :slidesPerView="2.6"
+        :slidesPerView="4.6"
         :spaceBetween="30"
         :centered-slides="frameworkList.length === 0"
         :autoplay="{
@@ -39,8 +39,8 @@ const props = defineProps({
     >
 
       <swiper-slide v-for="framework in frameworkList">
-        <div class="flex flex-col gap-4 items-center my-6">
-          <img alt="active framework image" :src="framework.circle_image" class="h-40"/>
+        <div class="flex flex-col gap-2 items-center my-2">
+          <img alt="active framework image" :src="framework.circle_image" class="h-32"/>
           <h6 class="text-nowrap">{{ framework.title }}</h6>
         </div>
       </swiper-slide>
@@ -50,7 +50,7 @@ const props = defineProps({
 
 <style scoped>
 .swiper {
-  padding-bottom: 30px !important;
+  padding-bottom: 20px !important;
 }
 
 :deep(.swiper-pagination-bullet-active){
