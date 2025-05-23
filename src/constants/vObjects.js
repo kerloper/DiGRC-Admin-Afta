@@ -59,13 +59,13 @@ const VObjects = {
     password: string()
         .trim()
         .required('password-required')
-        .min(8, 'password-min-length-required')
-        .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/, 'password-strong-pattern-required'),
+        .min(8, 'password-min-length-required'),
+        // .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/, 'password-strong-pattern-required'),
     current_password: string()
         .trim()
         .required('password-required')
-        .min(8, 'password-min-length-required')
-        .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/, 'password-strong-pattern-required'),
+        .min(8, 'password-min-length-required'),
+        // .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/, 'password-strong-pattern-required'),
     email: string()
         .trim()
         .required('email-required')

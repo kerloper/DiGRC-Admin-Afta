@@ -56,13 +56,13 @@ export function useValidation() {
     const passwordValidation = string()
         .trim()
         .required($t('message.password-required'))
-        .min(8, $t('message.password-min-length-required'))
-        .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/, 'password-strong-pattern-required');
+        .min(8, $t('message.password-min-length-required'));
+        // .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/, 'password-strong-pattern-required');
     const currentPasswordValidation = string()
         .trim()
         .required($t('message.password-required'))
-        .min(8, $t('message.password-min-length-required'))
-        .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/, 'password-strong-pattern-required');
+        .min(8, $t('message.password-min-length-required'));
+        // .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/, 'password-strong-pattern-required');
     const emailValidation = string()
         .trim()
         .required($t('message.email-required'))
