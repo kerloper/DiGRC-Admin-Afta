@@ -105,7 +105,7 @@ onUnmounted(() => {
       <div class="card-body">
         <div>
           <div>
-            <div class="flex flex-row text-center">
+            <div class="flex flex-row text-center" dir="ltr">
               <v-otp-input
                   ref="digitInput"
                   class="mx-auto"

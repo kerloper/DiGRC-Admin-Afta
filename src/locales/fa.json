@@ -649,6 +649,8 @@
     "state-answer": "وضعیت پاسخ"
   },
   "users": {
+    "module": "ماژول کاربران",
+    "role": "نقش",
     "email": "ایمیل",
     "name": "نام",
     "mobile": "موبایل",
@@ -732,6 +734,13 @@
     "finished-at": "پایان یافته در"
   },
   "general": {
+    "group-by-module": "گروه‌بندی بر اساس ماژول",
+    "group-by-section": "گروه‌بندی بر اساس بخش",
+    "search-all-items-(filters-groups)": "جستجوی همه آیتم‌ها (فیلترها و گروه‌ها)",
+    "search-items-within-visible-groups": "جستجو در گروه‌های قابل مشاهده",
+    "access": "دسترسی",
+    "no-items-match-your-current-search-filters": "هیچ آیتمی با فیلترهای فعلی یافت نشد",
+    "search-module": "جستجوی ماژول",
     "history": "تاریخچه",
     "copyright": "حق نشر © ۲۰۲۴. کلیه حقوق محفوظ است",
     "setting": "تنظیمات",
@@ -776,6 +785,14 @@
     "detail": "شما مجاز به مشاهده این صفحه نیستید."
   },
   "user": {
+    "mfa-digit-send-sms": "ارسال کد تأیید از طریق پیامک",
+    "group-by-module": "گروه‌بندی بر اساس ماژول",
+    "group-by-section": "گروه‌بندی بر اساس بخش",
+    "search-all-items-(filters-groups)": "جستجوی همه آیتم‌ها (فیلترها و گروه‌ها)",
+    "search-items-within-visible-groups": "جستجو در گروه‌های قابل مشاهده",
+    "access": "دسترسی",
+    "no-items-match-your-current-search-filters": "هیچ آیتمی با فیلترهای فعلی یافت نشد",
+    "search-module": "جستجوی ماژول",
     "mfa-digit-has-been-sent-sms": "یک پیامک به صندوق ورودی شما ارسال خواهد شد (یا پوشه اسپم را بررسی کنید!).",
     "mfa-digit-has-been-sent-email": "یک ایمیل به صندوق ورودی شما ارسال خواهد شد (یا پوشه اسپم را بررسی کنید!).",
     "mfa-digit-has-been-sent-app": "یک کد تأیید به برنامه احراز هویت شما ارسال خواهد شد.",
@@ -872,6 +889,7 @@
     "powered-by": " قدرت گرفته از پلتفرم GRC "
   },
   "menu": {
+    "access": "دسترسی‌ها",
     "online-members": "اعضای آنلاین",
     "library-list": "فهرست کتابخانه",
     "knowledge-list": "فهرست دانش",
@@ -1209,6 +1227,7 @@
     "status-required": "وضعیت مورد نیاز است"
   },
   "button": {
+    "add-permission": "افزودن دسترسی",
     "reset": "بازنشانی",
     "add-to-library": "افزودن به کتابخانه",
     "notification": "اعلان",
@@ -1448,6 +1467,19 @@
     "ttl": "TTL"
   },
   "message": {
+    "this-required": "این فیلد الزامی است",
+    "required-min-length-required": "حداقل تعداد کاراکتر رعایت نشده است",
+    "slug-pattern-invalid": "فرمت شناسه نادرست است",
+    "name-pattern-invalid": "فرمت نام نادرست است",
+    "quantity-valid-format-required": "فرمت مقدار معتبر نیست",
+    "quantity-required": "مقدار الزامی است",
+    "category-required": "دسته‌بندی الزامی است",
+    "location-required": "مکان الزامی است",
+    "strategy-required": "استراتژی الزامی است",
+    "latitude-valid-format-required": "فرمت عرض جغرافیایی نادرست است",
+    "latitude-required": "عرض جغرافیایی الزامی است",
+    "longitude-valid-format-required": "فرمت طول جغرافیایی نادرست است",
+    "longitude-required": "طول جغرافیایی الزامی است",
     "delete-role-confirmation": "آیا مطمئن هستید که می‌خواهید این نقش را حذف کنید؟ این عملیات غیرقابل بازگشت است.",
     "security-status": "در حال بررسی وضعیت امنیتی",
     "security-unauthorized": "{total} رکورد بررسی شد و {unverified} تغییر غیرمجاز در داده‌ها شناسایی شد. لطفاً تنظیمات امنیتی را بررسی کنید. کل بررسی‌ها: {total}، تأیید شده: {verified}، تأیید نشده: {unverified}.",
@@ -1564,6 +1596,7 @@
     "export-data-successful": "داده‌ها با موفقیت به کلیپ‌بورد صادر شدند"
   },
   "modal": {
+    "add-permission": "افزودن دسترسی",
     "filter-document-list": "فهرست اسناد را فیلتر کنید",
     "time-configuration": "پیکربندی زمان",
     "import-policy": "وارد کردن سیاست",
