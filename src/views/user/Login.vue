@@ -187,7 +187,7 @@ async function formSubmit() {
 <template>
   <div class="relative  flex flex-col justify-center gap-4 lg:gap-16 items-center w-full   overflow-hidden">
     <div>
-      <img alt="DiGRC Logo" src="../../assets/logos/logo-large-w.png" class="w-64 mt-4"/>
+      <img alt="GRC Logo" src="../../assets/logos/logo-large-w.png" class="w-64 mt-4"/>
     </div>
     <div class="card glass w-[400px] ">
       <div class="card-body  ">
@@ -315,13 +315,7 @@ async function formSubmit() {
         </li>
       </ol>
     </div>
-    <h6 class="text-white text-center">
-      <span class="font-semibold">Don't Have a Voucher?</span> If you haven't received a voucher, please
-      <a href='https://digrc.com/contact-us'
-         class="underline"
-         target="_blank">click here</a> to request
-      one
-    </h6>
+
 
   </div>
 </template>

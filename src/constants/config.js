@@ -40,19 +40,8 @@ export const constIsActiveTwoFactor =  1
 export const constTwoFactorMethod = 'sms'
 
 export const selfPanel= 'admin'
-// export const panelUrls = {
-//     admin: "#",
-//     user :  "https://app.digrc.com/",
-//     partner: "https://partners.digrc.com/"
-// }
 
 export const panelUrls = {
     admin: "#",
     user : "https://afta.dayagrc.ir/",
 }
-
-// export const panelUrls = {
-//     admin: "https://dev-admin.digrc.com/",
-//     user : "https://dev-gcc-v3.digrc.com/",
-//     partner: "https://dev-partner.digrc.com/"
-// }

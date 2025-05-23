@@ -86,8 +86,8 @@ userStore.requestNotificationCount();
     </div>
     <div class="navbar-center">
       <a class="flex justify-center text-xl cursor-pointer" href="/">
-        <img alt="DiGRC Logo" src="../assets/logos/logo.png" class="w-20 fixed top-0.5 md:hidden"/>
-        <img alt="DiGRC Logo" src="../assets/logos/logo-large.png" class="w-60 fixed top-2 hidden md:inline-block "/>
+        <img alt="GRC Logo" src="../assets/logos/logo.png" class="w-20 fixed top-0.5 md:hidden"/>
+        <img alt="GRC Logo" src="../assets/logos/logo-large.png" class="w-60 fixed top-2 hidden md:inline-block "/>
       </a>
     </div>
     <div class="navbar-end gap-3">

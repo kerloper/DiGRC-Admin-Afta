@@ -97,7 +97,7 @@ onUnmounted(() => {
 <template>
   <div class="relative  flex flex-col justify-center gap-4 lg:gap-16 items-center w-full overflow-hidden">
     <div>
-      <img alt="DiGRC Logo" src="../../../assets/logos/logo-large-w.png" class="w-64 mt-4"/>
+      <img alt="GRC Logo" src="../../../assets/logos/logo-large-w.png" class="w-64 mt-4"/>
     </div>
     <div class="card glass w-[480px] min-h-52"
          :class="{'skeleton':loading}"
