@@ -152,7 +152,7 @@ export const useUserStore = defineStore('user', () => {
             setUser(userData)
             setMfa({multi_factor_global, multi_factor_verify, multi_factor_status, multi_factor_method})
             setCurrentUser(userData)
-            if (multi_factor_verify === 1 || (multi_factor_global === 0)) {
+            if (multi_factor_verify === 1 || (multi_factor_status === 0 && multi_factor_global === 0)) {
                 configurationWrapper()
             }
         } else if (error.value) {

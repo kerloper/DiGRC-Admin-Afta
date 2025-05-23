@@ -1,4 +1,4 @@
-import {apiAIT, apiInflowengerV2, apiV3} from "@/constants/config";
+import {apiV3} from "@/constants/config";
 import useMyFetch from "@/composables/my-fetch.js";
 
 export default {
@@ -54,7 +54,7 @@ export default {
         return useMyFetch(apiV3, "admin/assessment/context/list", {}).json().post(payload)
     },
     contextDetail(payload) {
-        return useMyFetch(apiV3, "admin/assessment/context/get", { immediate: false }).json().post(payload)
+        return useMyFetch(apiV3, "admin/assessment/context/get", {immediate: false}).json().post(payload)
     },
 
     //method sections of members
@@ -62,21 +62,21 @@ export default {
         return useMyFetch(apiV3, "admin/user/profile/list", {}).json().post(payload)
     },
     getMemberProfile(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
         return useMyFetch(apiV3, "admin/user/profile/view", options).json()
     },
     deleteMemberRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
         return useMyFetch(apiV3, "admin/user/profile/delete", options).json()
     },
     addMemberRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
@@ -89,14 +89,14 @@ export default {
         return useMyFetch(apiV3, "admin/user/profile/edit", {}).json().post(payload)
     },
     updateStatusMemberRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
         return useMyFetch(apiV3, "admin/user/profile/status", options).json()
     },
     updateMemberPasswordRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
@@ -132,10 +132,10 @@ export default {
 
     //method sections of permission/resource
     listResourcePermissionRequest(payload) {
-        return useMyFetch(apiV3, "admin/user/permission/resource/list",{}).json().post(payload)
+        return useMyFetch(apiV3, "admin/user/permission/resource/list", {}).json().post(payload)
     },
     updateResourcePermissionRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
@@ -148,15 +148,15 @@ export default {
 
     //method sections of permission/page
     listPagePermissionRequest(payload) {
-        return useMyFetch(apiV3, "admin/user/permission/page/list",{}).json().post(payload)
+        return useMyFetch(apiV3, "admin/user/permission/page/list", {}).json().post(payload)
     },
 
     //method sections of permission/role
     listRolePermissionRequest(payload) {
-        return useMyFetch(apiV3, "admin/user/permission/role/list",{}).json().post(payload)
+        return useMyFetch(apiV3, "admin/user/permission/role/list", {}).json().post(payload)
     },
     updateRolePermissionRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
@@ -176,7 +176,7 @@ export default {
     updateCompanyMemberRequest(payload) {
         return useMyFetch(apiV3, "admin/company/member/update", {}).json().post(payload)
     },
-     listCompanyMemberRequest(payload) {
+    listCompanyMemberRequest(payload) {
         return useMyFetch(apiV3, "admin/company/member/list", {}).json().post(payload)
     },
     updateCompanyRequest(payload) {
@@ -185,14 +185,14 @@ export default {
     addCompanyRequest(payload) {
         return useMyFetch(apiV3, "admin/company/add", {}).json().post(payload)
     },
-    updateCompanyPackageRequest(payload){
+    updateCompanyPackageRequest(payload) {
         return useMyFetch(apiV3, "admin/company/package-update", {}).json().post(payload)
     },
     listPackageCompanyRequest(payload) {
         return useMyFetch(apiV3, "admin/company/package/list", {}).json().post(payload)
     },
     addPackageCompanyRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
@@ -204,23 +204,23 @@ export default {
 
     //method sections of assessment
     listFrameworkRequest(payload) {
-        return useMyFetch(apiV3, "admin/assessment/framework/list",{}).json().post(payload)
+        return useMyFetch(apiV3, "admin/assessment/framework/list", {}).json().post(payload)
     },
     lightListFrameworkRequest(payload) {
-        return useMyFetch(apiV3, "admin/assessment/framework/list-light",{}).json().post(payload)
+        return useMyFetch(apiV3, "admin/assessment/framework/list-light", {}).json().post(payload)
     },
     addFrameworkRequest(payload) {
         return useMyFetch(apiV3, "admin/assessment/framework/add", {}).json().post(payload)
     },
     updateFrameworkRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
         return useMyFetch(apiV3, "admin/assessment/framework/update", options).json()
     },
     listDomainRequest(payload) {
-        return useMyFetch(apiV3, "admin/assessment/domain/list",{}).json().post(payload)
+        return useMyFetch(apiV3, "admin/assessment/domain/list", {}).json().post(payload)
     },
     lightListDomainRequest(payload) {
         return useMyFetch(apiV3, "admin/assessment/domain/list-light", {}).json().post(payload)
@@ -229,7 +229,7 @@ export default {
         return useMyFetch(apiV3, "admin/assessment/domain/add", {}).json().post(payload)
     },
     updateDomainRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
@@ -240,7 +240,7 @@ export default {
         return useMyFetch(apiV3, "admin/assessment/control/list-light", {}).json().post(payload)
     },
     listControlRequest(payload) {
-        return useMyFetch(apiV3, "admin/assessment/control/list",{}).json().post(payload)
+        return useMyFetch(apiV3, "admin/assessment/control/list", {}).json().post(payload)
     },
     addControlRequest(payload) {
         return useMyFetch(apiV3, "admin/assessment/control/add", {}).json().post(payload)
@@ -249,17 +249,17 @@ export default {
         return useMyFetch(apiV3, "admin/assessment/control/update", {}).json().post(payload)
     },
     listActivateRequest(payload) {
-        return useMyFetch(apiV3, "admin/assessment/activation/list",{}).json().post(payload)
+        return useMyFetch(apiV3, "admin/assessment/activation/list", {}).json().post(payload)
     },
     addActivateRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
         return useMyFetch(apiV3, "admin/assessment/activation/add", options).json()
     },
     updateActivateRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
@@ -268,7 +268,7 @@ export default {
 
 
     listImprovementRequest(payload) {
-        return useMyFetch(apiV3, "admin/assessment/improvement/list",{}).json().post(payload)
+        return useMyFetch(apiV3, "admin/assessment/improvement/list", {}).json().post(payload)
     },
     addImprovementRequest(payload) {
         return useMyFetch(apiV3, "admin/assessment/improvement/add", {}).json().post(payload)
@@ -286,25 +286,25 @@ export default {
     },
 
     //method sections of configuration
-    listCacheRequest(payload){
+    listCacheRequest(payload) {
         return useMyFetch(apiV3, "admin/user/cache/list", {}).json().post(payload)
     },
     deleteCacheRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
         return useMyFetch(apiV3, "admin/user/cache/delete", options).json()
     },
     persistCacheRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
         return useMyFetch(apiV3, "admin/user/cache/persist", options).json()
     },
     detailCacheRequest(payload) {
-        const options={
+        const options = {
             method: 'post',
             body: payload,
         }
@@ -321,7 +321,6 @@ export default {
     updatePromptRequest(payload) {
         return useMyFetch(apiV3, "admin/ai/prompt/update", {}).json().post(payload)
     },
-
 
 
     //api section services
@@ -353,107 +352,22 @@ export default {
         return useMyFetch(apiV3, "user/avatar/upload", {payload})
     },
 
-    ///inflow section
-
-    listInflowPolicyRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `policy/list?page=${payload.page}&per_page=${payload.limit}`, {})
-    },
-    detailPolicyRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `policy/id/${payload.policyId}`, {})
-    },
-    addPolicyRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `policy/new`, {}).json().post(payload)
-    },
-    policyRegularFormSearch() {
-        return useMyFetch(apiInflowengerV2, `forms/list?page=1&per_page=1000`, {})
-    },
-    getExtrinsicForm(payload) {
-        return useMyFetch(apiInflowengerV2, `forms/external/${payload}`, {})
-    },
-    deletePolicyRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `policy/id/${payload}`, {}).delete()
-    },
-    executePolicy(payload) {
-        return useMyFetch(apiInflowengerV2, `policy/start`, {}).json().post(payload)
-    },
-    stopPolicy(payload) {
-        return useMyFetch(apiInflowengerV2, `policy/stop/${payload}`, {}).json().post()
-    },
-
-
-    listInflowDocumentRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `doc/list?page=${payload.page}&per_page=${payload.limit}`, {})
-    },
-    updateInflowDocumentRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `doc/title/${payload.docId}`, {}).json().patch(payload)
-    },
-    updateInflowSchedulerDocumentRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `doc/sched`, {}).json().post(payload)
-    },
-    addDocumentRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `doc/entry/nullgate`, {}).json().post(payload)
-    },
-    deleteDocumentRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `doc/${payload}`, {}).delete()
-    },
-    detailDocumentRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `doc/${payload}`, {})
-    },
-    updateDocumentDataRequest(payload) {
-        return useMyFetch(apiInflowengerV2, `doc/${payload.id}`, {}).json().patch(payload.data)
-    },
-    requestWebSocketUrl() {
-        return useMyFetch(apiInflowengerV2, `ws`, {})
-    },
-
     //section of core
-    coreConfigSetting(payload={}) {
+    coreConfigSetting(payload = {}) {
         return useMyFetch(apiV3, "admin/core/config/list", {}).json().post(payload)
     },
     coreConfigUpdate(payload) {
         return useMyFetch(apiV3, "admin/core/config/update", {}).json().post(payload)
     },
-    checkSignature(payload={}) {
+    checkSignature(payload = {}) {
         return useMyFetch(apiV3, "admin/core/signature/check", {}).json().post(payload)
     },
 
     /// manage log repository section
-    manageLoggerRepository(payload={}) {
+    manageLoggerRepository(payload = {}) {
         return useMyFetch(apiV3, "admin/logger/manage/repository", {}).json().post(payload)
     },
 
-    ///section of AI services
-    fileUploadedVecRequest(payload) {
-        const request ={
-            body:payload,
-            method: 'post',
-        }
-        return useMyFetch(apiAIT, `upload`, request).post()
-    },
-    fileUploadedGlobalRequest(payload) {
-        const request ={
-            body:payload,
-            method: 'post',
-        }
-        return useMyFetch(apiAIT, `upload/digrc-global`, request).post()
-    },
-    listFileUploadedRequest(payload) {
-        const pagination = `?sort=${payload.sort??'desc'}&per_page=${payload.limit}&page=${payload.page}`
-        const query = payload?.libId ? `&libId=${encodeURIComponent(payload.libId)}` : '';
-        return useMyFetch(apiAIT, `admin/files${pagination}${query}`, {}).json().get()
-    },
-    listLibraryRequest(payload) {
-        return useMyFetch(apiAIT, `admin/lib`, {}).json().get()
-    },
-    addLibraryRequest(payload) {
-        return useMyFetch(apiAIT, `admin/lib`, {}).json().post(payload)
-    },
-    updateLibraryRequest(payload) {
-        return useMyFetch(apiAIT, `admin/lib`, {}).json().patch(payload)
-    },
-    addFileToLibraryRequest(payload) {
-        return useMyFetch(apiAIT, `admin/file/addtolib`, {}).json().post(payload)
-    },
 
     //setting section
     moduleList(payload) {

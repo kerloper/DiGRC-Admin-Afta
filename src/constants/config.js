@@ -4,13 +4,10 @@ export const BREAKPOINT = 1280
 export const adminRoot = '/app';
 export const searchPath = `${adminRoot}/#`
 export const apiV3 = "https://dev-core.digrc.com/";
-export const apiInflowengerV2 = "https://diflow.digrc.com/v2/";
-export const apiAIT = "https://ait.digrc.com/";
 ///TODO: kerloper: uncomment bottom line and comment next line of it for production
+// export const cookieDomain =".dayagrc.ir";
 export const cookieDomain ="localhost";
 // export const cookieDomain ="/";
-export const assetsUrl = 'https://assetdisc.digrc.com/asset-manager/'
-export const vaUrl = 'https://va-core.digrc.com/v1/'
 export const defaultLocale = 'en'
 export const defaultDirection = 'ltr'
 export const localeOptions = [
@@ -51,8 +48,7 @@ export const selfPanel= 'admin'
 
 export const panelUrls = {
     admin: "#",
-    user : "https://dev-gcc-v3.digrc.com/",
-    partner: "https://dev-partner.digrc.com/"
+    user : "https://afta.dayagrc.ir/",
 }
 
 // export const panelUrls = {
