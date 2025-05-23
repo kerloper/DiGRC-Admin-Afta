@@ -3,11 +3,11 @@ export const defaultMenuType = 'visible'
 export const BREAKPOINT = 1280
 export const adminRoot = '/app';
 export const searchPath = `${adminRoot}/#`
-export const apiV3 = "https://afta-core.dayagrc.ir/";
-// export const apiV3 = "https://dev-core.digrc.com/";
+// export const apiV3 = "https://afta-core.dayagrc.ir/";
+export const apiV3 = "https://dev-core.digrc.com/";
 ///TODO: kerloper: uncomment bottom line and comment next line of it for production
-export const cookieDomain =".dayagrc.ir";
-// export const cookieDomain ="localhost";
+// export const cookieDomain =".dayagrc.ir";
+export const cookieDomain ="localhost";
 // export const cookieDomain ="/";
 export const defaultLocale = 'fa'
 export const defaultDirection = 'rtl'

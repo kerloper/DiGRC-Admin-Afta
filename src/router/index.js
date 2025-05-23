@@ -234,21 +234,6 @@ const router = createRouter({
                         meta: {loginRequired: true},
                         children: [
                             {
-                                path: "user",
-                                name: "logUser",
-                                component: () => import("../views/app/log/user/index.vue"),
-                                redirect: `${adminRoot}/log/user/log-list`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "log-list",
-                                        name: "logUserList",
-                                        component: () => import("../views/app/log/user/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-                            {
                                 path: "system",
                                 name: "logInventory",
                                 component: () => import("../views/app/log/system/index.vue"),
