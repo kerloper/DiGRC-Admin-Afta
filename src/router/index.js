@@ -181,21 +181,6 @@ const router = createRouter({
                         meta: {loginRequired: true},
                         children: [
                             {
-                                path: "package",
-                                name: "moduleFeaturePackage",
-                                component: () => import("../views/app/module-feature/package/index.vue"),
-                                redirect: `${adminRoot}/module-feature/package/package-list`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "package-list",
-                                        name: "moduleFeaturePackageList",
-                                        component: () => import("../views/app/module-feature/package/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-                            {
                                 path: "framework",
                                 name: "moduleFeatureFramework",
                                 component: () => import("../views/app/module-feature/framework/index.vue"),
@@ -236,71 +221,6 @@ const router = createRouter({
                                         path: "control-list",
                                         name: "moduleFeatureControlList",
                                         component: () => import("../views/app/module-feature/control/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-                            {
-                                path: "activate",
-                                name: "moduleFeatureActivate",
-                                component: () => import("../views/app/module-feature/activate/index.vue"),
-                                redirect: `${adminRoot}/module-feature/activate/activate-list`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "activate-list",
-                                        name: "moduleFeatureActivateList",
-                                        component: () => import("../views/app/module-feature/activate/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-
-
-                            {
-                                path: "improvement",
-                                name: "moduleFeatureImprovement",
-                                component: () => import("../views/app/module-feature/improvement/index.vue"),
-                                redirect: `${adminRoot}/module-feature/improvement/list`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "list",
-                                        name: "moduleFeatureImprovementList",
-                                        component: () => import("../views/app/module-feature/improvement/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                    {
-                                        path: "import",
-                                        name: "moduleFeatureImprovementImport",
-                                        component: () => import("../views/app/module-feature/improvement/import/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-                            {
-                                path: "audit",
-                                name: "moduleFeatureAudit",
-                                component: () => import("../views/app/module-feature/audit/index.vue"),
-                                redirect: `${adminRoot}/module-feature/audit/template`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "import",
-                                        name: "moduleFeatureAuditImport",
-                                        component: () => import("../views/app/module-feature/audit/import/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                    {
-                                        path: "template",
-                                        name: "moduleFeatureAuditTemplate",
-                                        component: () => import("../views/app/module-feature/audit/template/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                    {
-                                        path: "check-list",
-                                        name: "moduleFeatureAuditCheckList",
-                                        component: () => import("../views/app/module-feature/audit/check-list/index.vue"),
                                         meta: {loginRequired: true},
                                     },
                                 ]
@@ -352,21 +272,6 @@ const router = createRouter({
                         meta: {loginRequired: true},
                         children: [
                             {
-                                path: "cache",
-                                name: "cacheCache",
-                                component: () => import("../views/app/configuration/cache/index.vue"),
-                                redirect: `${adminRoot}/configuration/cache/cache-list`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "cache-list",
-                                        name: "configurationCacheList",
-                                        component: () => import("../views/app/configuration/cache/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-                            {
                                 path: "setting",
                                 name: "configurationSetting",
                                 component: () => import("../views/app/configuration/setting/index.vue"),
@@ -390,110 +295,6 @@ const router = createRouter({
                         meta: {loginRequired: true},
                         children: []
                     },
-                    {
-                        path: "workflow",
-                        name: "workflow",
-                        component: () => import("../views/app/workflow/index.vue"),
-                        meta: {loginRequired: true},
-                        children: [
-                            {
-                                path: "policy",
-                                name: "workflowPolicy",
-                                component: () => import("../views/app/workflow/policy/index.vue"),
-                                redirect: `${adminRoot}/workflow/policy/policy-list`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "policy-list",
-                                        name: "workflowPolicyList",
-                                        component: () => import("../views/app/workflow/policy/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                    {
-                                        path: "policy-detail/:policyId?",
-                                        name: "workflowPolicyDetail",
-                                        component: () => import("../views/app/workflow/policy/detail/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-                            {
-                                path: "document",
-                                name: "workflowDocument",
-                                component: () => import("../views/app/workflow/document/index.vue"),
-                                redirect: `${adminRoot}/workflow/document/document-list`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "document-list",
-                                        name: "workflowDocumentList",
-                                        component: () => import("../views/app/workflow/document/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                    {
-                                        path: "document-detail/:documentId?",
-                                        name: "workflowDocumentDetail",
-                                        component: () => import("../views/app/workflow/document/detail/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        path: "ai-assistant",
-                        name: "ai-assistant",
-                        component: () => import("../views/app/ai-assistant/index.vue"),
-                        meta: {loginRequired: true},
-                        children: [
-                            {
-                                path: "prompt",
-                                name: "aiAssistantPrompt",
-                                component: () => import("../views/app/ai-assistant/prompt/index.vue"),
-                                redirect: `${adminRoot}/ai-assistant/prompt/prompt-list`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "prompt-list",
-                                        name: "aiAssistantPromptList",
-                                        component: () => import("../views/app/ai-assistant/prompt/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-                            {
-                                path: "knowledge",
-                                name: "aiAssistantKnowledge",
-                                component: () => import("../views/app/ai-assistant/knowledge/index.vue"),
-                                redirect: `${adminRoot}/ai-assistant/knowledge/knowledge-list`,
-                                meta: {loginRequired: true},
-                                children: [
-
-                                    {
-                                        path: "knowledge-list",
-                                        name: "aiAssistantKnowledgeList",
-                                        component: () => import("../views/app/ai-assistant/knowledge/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-                            {
-                                path: "library",
-                                name: "aiAssistantLibrary",
-                                component: () => import("../views/app/ai-assistant/library/index.vue"),
-                                redirect: `${adminRoot}/ai-assistant/library/library-list`,
-                                meta: {loginRequired: true},
-                                children: [
-                                    {
-                                        path: "library-list",
-                                        name: "aiAssistantLibraryList",
-                                        component: () => import("../views/app/ai-assistant/library/list/index.vue"),
-                                        meta: {loginRequired: true},
-                                    },
-                                ]
-                            },
-                        ]
-                    }
                 ]
             },
             {

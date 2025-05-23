@@ -130,36 +130,6 @@ const data = [
         to: `${adminRoot}/module-feature`,
         subs: [
             {
-                id: "package",
-                label: "menu.package",
-                to: `${adminRoot}/module-feature/package`,
-
-                subs: [
-                    {
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">\n" +
-                            "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9\" />\n" +
-                            "</svg>",
-                        label: "menu.package-list",
-                        to: `${adminRoot}/module-feature/package/package-list`,
-                    },
-                ]
-            },
-            {
-                id: "activate",
-                label: "menu.activate",
-                to: `${adminRoot}/module-feature/activate`,
-
-                subs: [
-                    {
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z\" />" +
-                            "</svg>",
-                        label: "menu.activate-list",
-                        to: `${adminRoot}/module-feature/activate/activate-list`,
-                    },
-                ]
-            },
-            {
                 id: "framework",
                 label: "menu.framework",
                 to: `${adminRoot}/module-feature/framework`,
@@ -204,155 +174,7 @@ const data = [
                     },
                 ]
             },
-            {
-                id: "improvement",
-                label: "menu.improvement",
-                to: `${adminRoot}/module-feature/improvement`,
-
-                subs: [
-                    {
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z\" />" +
-                            "</svg>",
-                        label: "menu.list",
-                        to: `${adminRoot}/module-feature/improvement/list`,
-                    },
-                    {
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m9 13.5 3 3m0 0 3-3m-3 3v-6m1.06-4.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z\" />" +
-                            "</svg>",
-                        label: "menu.import",
-                        to: `${adminRoot}/module-feature/improvement/import`,
-                    },
-                ]
-            },
-            {
-                id: "audit",
-                label: "menu.audit",
-                to: `${adminRoot}/module-feature/audit`,
-
-                subs: [
-
-                    {
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z\" />" +
-                            "</svg>",
-                        label: "menu.template",
-                        to: `${adminRoot}/module-feature/audit/template`,
-                    },  {
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z\" />" +
-                            "</svg>",
-                        label: "menu.check-list",
-                        to: `${adminRoot}/module-feature/audit/check-list`,
-                    },
-                    {
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m9 13.5 3 3m0 0 3-3m-3 3v-6m1.06-4.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z\" />" +
-                            "</svg>",
-                        label: "menu.import",
-                        to: `${adminRoot}/module-feature/audit/import`,
-                    },
-                ]
-            },
         ],
-    },
-    {
-        id: "workflow",
-        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z\" />" +
-            "</svg>",
-        label: "menu.workflow",
-        to: `${adminRoot}/workflow`,
-        subs: [
-            {
-                id:"workflowPolicy",
-                label: "menu.policy",
-                to: `${adminRoot}/workflow/policy`,
-                subs: [
-                    {
-                        id: "workflowPolicyList",
-                        label: "menu.policy-list",
-                        to: `${adminRoot}/workflow/policy/policy-list`,
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75\" />" +
-                            "</svg>"
-                    }
-                ]
-
-            },
-            {
-                id:"workflowDocument",
-                label: "menu.document",
-                to: `${adminRoot}/workflow/document`,
-                subs: [
-                    {
-                        id: "workflowDocumentList",
-                        label: "menu.document-list",
-                        to: `${adminRoot}/workflow/document/document-list`,
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75\" />" +
-                            "</svg>"
-                    }
-                ]
-
-            }
-        ]
-    },
-    {
-        id: "ai-assistant",
-        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z\" />" +
-            "</svg>",
-        label: "menu.ai-assistant",
-        to: `${adminRoot}/ai-assistant`,
-        subs: [
-            {
-                id:"aiAssistantPrompt",
-                label: "menu.prompt",
-                to: `${adminRoot}/ai-assistant/prompt`,
-                subs: [
-                    {
-                        id: "aiAssistantPromptList",
-                        label: "menu.prompt-list",
-                        to: `${adminRoot}/ai-assistant/prompt/prompt-list`,
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z\" />" +
-                            "</svg>"
-                    }
-                ]
-            },
-            {
-                id:"aiAssistantLibrary",
-                label: "menu.library",
-                to: `${adminRoot}/ai-assistant/library`,
-                subs: [
-                    {
-                        id: "aiAssistantLibraryList",
-                        label: "menu.library-list",
-                        to: `${adminRoot}/ai-assistant/library/library-list`,
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">\n" +
-                            "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3\" />\n" +
-                            "</svg>"
-                    },
-                ]
-            },
-            {
-                id:"aiAssistantKnowledge",
-                label: "menu.knowledge",
-                to: `${adminRoot}/ai-assistant/knowledge`,
-                subs: [
-                    {
-                        id: "aiAssistantKnowledgeList",
-                        label: "menu.knowledge-list",
-                        to: `${adminRoot}/ai-assistant/knowledge/knowledge-list`,
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">\n" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125\" />\n" +
-                            "</svg>\n"
-                    },
-                ]
-            },
-        ]
     },
     {
         id: "log",
@@ -402,21 +224,6 @@ const data = [
         label: "menu.configuration",
         to: `${adminRoot}/configuration`,
         subs: [
-            {
-                id: "configurationCache",
-                label: "menu.cache",
-                to: `${adminRoot}/configuration/cache`,
-
-                subs: [
-                    {
-                        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-5\">" +
-                            "  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125\" />" +
-                            "</svg>",
-                        label: "menu.cache-list",
-                        to: `${adminRoot}/configuration/cache/cache-list`,
-                    },
-                ]
-            },
             {
                 id: "configurationSetting",
                 label: "menu.setting",
