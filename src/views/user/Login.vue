@@ -288,33 +288,10 @@ async function formSubmit() {
 
         </Form>
 
-        <BaseButton class="w-full btn-sm btn-link no-underline font-weight-bold block text-center text-white"
-                    @click="changeLoginType">
-          <span>  {{ loginOrRegisterText }}</span>
-        </BaseButton>
 
-
-        <div class="flex flex-col gap-2">
-          <BaseButton class="w-full btn-sm">
-            <span>Login With Microsoft</span>
-          </BaseButton>
-          <BaseButton class="w-full btn-sm">
-            <span>Login With Google</span>
-          </BaseButton>
-
-        </div>
       </div>
     </div>
 
-    <div>
-      <ol class="text-white">
-        <li v-for="(item,index) in info" :key="item.title"
-            class=" d-flex align-items-baseline flex-row-reverse justify-content-end">
-          <h6 class="mx-1"><span class="font-weight-semibold">{{ index + 1 }}. {{ item.title }}</span> {{ item.desc }}
-          </h6>
-        </li>
-      </ol>
-    </div>
 
 
   </div>
