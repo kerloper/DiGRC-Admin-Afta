@@ -53,7 +53,7 @@ export const useUserStore = defineStore('user', () => {
     const isLoadedLogInformation = useStorage("isLoadedLogInformation", false);
     const mfaMethod = useStorage("mfaMethod", constTwoFactorMethod);
     const mfaGlobal = useStorage("mfaGlobal", constIsActiveTwoFactor);
-    const mfaStatus = useStorage("mfaStatus", 0);
+    const mfaStatus = useStorage("mfaStatus", 1);
     const mfaVerify = useStorage("mfaVerify", 1);
 
     function setProcessing(payload) {
@@ -152,7 +152,7 @@ export const useUserStore = defineStore('user', () => {
             setUser(userData)
             setMfa({multi_factor_global, multi_factor_verify, multi_factor_status, multi_factor_method})
             setCurrentUser(userData)
-            if (multi_factor_verify === 1) {
+            if (multi_factor_verify === 1 || (multi_factor_global === 0)) {
                 configurationWrapper()
             }
         } else if (error.value) {
@@ -211,7 +211,7 @@ export const useUserStore = defineStore('user', () => {
     async function updateProfileState() {
         const {data, error} = await API.viewProfileRequest()
         if (data.value) {
-            currentUser.value =data.value.data
+            currentUser.value = data.value.data
             setCurrentUser(currentUser.value)
             configurationWrapper()
             // Object.keys(data.value.data).forEach(key => {
@@ -293,9 +293,9 @@ export const useUserStore = defineStore('user', () => {
                 isFetching: false,
                 seen: false,
                 total: data?.value?.data?.total,
-                verified:  data?.value?.data?.verified,
-                unverified:  data?.value?.data?.unverified,
-                list:data?.value?.data?.list
+                verified: data?.value?.data?.verified,
+                unverified: data?.value?.data?.unverified,
+                list: data?.value?.data?.list
             }
         }
     }
@@ -425,11 +425,16 @@ export const useUserStore = defineStore('user', () => {
 
     function initializeSecurity() {
         ///TODO: use this for afta
-        // if (currentUser.value && mfaVerify.value === 1) {
-        if (currentUser.value ) {
+
+        console.log("do")
+        if (currentUser.value && mfaVerify.value === 1) {
+            // if (currentUser.value ) {
             startRefreshToken();
             startInactivityTracking();
+
+            console.log("bkh")
             if (!isLoadedSecurityInformation.value) {
+                console.log("GG")
                 checkSecurity()
                 checkLog()
             }

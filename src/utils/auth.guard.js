@@ -12,22 +12,24 @@ const mfaGlobal = useStorage("mfaGlobal", 0);
 const mfaVerify = useStorage("mfaVerify", 0);
 const mfaStatus = useStorage("mfaStatus", 0);
 
-export default   async (to, from, next) => {
+export default async (to, from, next) => {
     if (to.matched.some(record => record.meta.loginRequired)) {
         if (isAuthGuardActive) {
             const utn = getCookie('utn');
             const user = getCurrentUser();
 
             ///TODO:uncomment for afta
-            // if (utn && user) {
-            //     // if (userStore.mfaGlobal === 1 && userStore.mfaVerify === 0) {
-            //     if ((mfaGlobal.value + mfaStatus.value) > 0 && mfaVerify.value === 0) {
-            //         if (to.path !== '/user/mfa') {
-            //             next('/user/mfa')
-            //         } else {
-            //             next()
-            //         }
-            //     }
+            if (utn && user) {
+                console.log(mfaGlobal.value , mfaStatus.value ,mfaVerify.value)
+                // if (userStore.mfaGlobal === 1 && userStore.mfaVerify === 0) {
+                if ((mfaGlobal.value + mfaStatus.value) > 0 && mfaVerify.value === 0) {
+                    if (to.path !== '/user/mfa') {
+                        next('/user/mfa')
+                    } else {
+                        next()
+                    }
+                }
+            }
             if (utn) {
                 ///TODO:remove for afta
                 if (!user) {

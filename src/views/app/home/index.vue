@@ -99,7 +99,7 @@ const tableMemberHeaders = [
 <template>
   <section>
 
-<!--    <ConfigurationComponent />-->
+    <ConfigurationComponent />
 
     <!-- START CARD SECTION   -->
     <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 xl:grid-cols-6 lg:grid-cols-6 gap-3">

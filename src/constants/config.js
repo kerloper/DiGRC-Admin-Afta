@@ -7,7 +7,7 @@ export const apiV3 = "https://dev-core.digrc.com/";
 export const apiInflowengerV2 = "https://diflow.digrc.com/v2/";
 export const apiAIT = "https://ait.digrc.com/";
 ///TODO: kerloper: uncomment bottom line and comment next line of it for production
-export const cookieDomain =".digrc.com";
+export const cookieDomain ="localhost";
 // export const cookieDomain ="/";
 export const assetsUrl = 'https://assetdisc.digrc.com/asset-manager/'
 export const vaUrl = 'https://va-core.digrc.com/v1/'
@@ -15,7 +15,7 @@ export const defaultLocale = 'en'
 export const defaultDirection = 'ltr'
 export const localeOptions = [
   { id: 'en', name: 'English', direction: 'ltr' },
-  // { id: 'fa', name: 'فارسی', direction: 'rtl' },
+  { id: 'fa', name: 'فارسی', direction: 'rtl' },
   { id: 'ar', name: 'العربی', direction: 'rtl' },
 ]
 export const isAuthGuardActive = true;
@@ -36,11 +36,11 @@ export const listSetting = {
 }
 /// Security configs
 export const signatureTables = ['user_account', 'role_account', 'permission_role']
-export const isMultiRoles = true
+export const isMultiRoles = false
 export const refreshTokenTTl = (15 * 60 * 1000)
 export const inactivityTTl = (20 * 60 * 1000)
-export const constIsActiveTwoFactor =  0
-export const constTwoFactorMethod = 'app'
+export const constIsActiveTwoFactor =  1
+export const constTwoFactorMethod = 'sms'
 
 export const selfPanel= 'admin'
 // export const panelUrls = {

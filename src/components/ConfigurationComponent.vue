@@ -10,7 +10,8 @@ const security = (computed(() => userStore.currentSecurityInformation))
 const log = (computed(() => userStore.currentLogInformation))
 
 function closeSecurityAlert(checking) {
-  security.value[checking.table].seen = true
+  console.log(checking)
+  security.value[checking?.table].seen = true
 }
 
 function closeLogAlert(checking) {
@@ -120,7 +121,6 @@ function closeLogAlert(checking) {
             </div>
           </div>
         </div>
-
         <span class="absolute top-0 bottom-0 end-0 px-4 py-3" @click="closeSecurityAlert(checking)"
               v-if="!checking.isFetching">
             <svg class="fill-current h-6 w-6" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

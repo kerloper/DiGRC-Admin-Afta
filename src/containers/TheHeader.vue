@@ -12,8 +12,6 @@ import {useUserStore} from "@/stores/user.js";
 import {logout} from "@/composables/logout.js";
 import {inject} from "vue";
 import PanelSwicher from "@/containers/PanelSwicher.vue";
-import ConfigurationComponent from "@/components/ConfigurationComponent.vue";
-
 const refresher = inject('refresher');
 
 const theme = useStorage(themeSelectedColorStorageKey, defaultTheme)
@@ -96,7 +94,6 @@ userStore.requestNotificationCount();
 
 
       <PanelSwicher/>
-      <ConfigurationComponent/>
 
       <div class=" relative cursor-pointer" @click="goToNotificationList()">
         <div class="bg-primary rounded-full absolute w-4 h-4 text-xs font-semibold -end-1 text-white text-center"

@@ -683,7 +683,8 @@ listRoleRequest()
             >
               <div>
                 <div v-for="section in data.item.roles" :key="section">
-                  <p>{{ section.map(item => item).map(item => item.title).join(', ') }}</p>
+<!--                  <p>{{ section.map(item => item).map(item => item.title).join(', ') }}</p>-->
+                 <p>{{ [...section.map(item => item)].map(item => item.title)[1]}}</p>
                 </div>
               </div>
             </div>
