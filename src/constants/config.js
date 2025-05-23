@@ -45,3 +45,4 @@ export const panelUrls = {
     admin: "#",
     user : "https://afta.dayagrc.ir/",
 }
+export const versionName = '1.0'

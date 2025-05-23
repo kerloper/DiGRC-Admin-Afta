@@ -6,9 +6,11 @@ import {computed, onMounted, ref, nextTick, toRef, onBeforeMount, onBeforeUnmoun
 import {useLocaleStore} from "@/stores/locale.js";
 import {useRouter} from "vue-router";
 import {useStorage} from '@vueuse/core'
-import {BREAKPOINT, toNavItemsDefaultValue, topNavItemsKey} from "@/constants/config.js";
+import {BREAKPOINT, toNavItemsDefaultValue, topNavItemsKey, versionName} from "@/constants/config.js";
 import {useFilteredMenuItems} from "@/composables/filtered-menu-items.js";
+import {useI18n} from "vue-i18n";
 
+const {t: $t} = useI18n();
 const menu = useMenuStore()
 const isRtl = computed(() => useLocaleStore().isRtl)
 const router = useRouter()
@@ -143,7 +145,11 @@ router.afterEach((to, from) => {
 
 
         </li>
+
       </ul>
+      <div class="my-2 border-t-2 ps-4 py-4 text-primary text-sm font-medium">
+        {{$t('governance.version')}} : {{ versionName}}
+      </div>
     </div>
   </div>
 </template>
