@@ -160,7 +160,6 @@ export const useUserStore = defineStore('user', () => {
             setCurrentUser(null)
         }
         setProcessing(false)
-
     }
 
     function configurationWrapper() {
